@@ -1,46 +1,38 @@
-import React from "react";
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Atelier Xavi – Timeless Kidswear</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Atelier Xavi creëert tijdloze, stijlvolle kindercollecties met een volwassen signatuur."
+  />
 
-export default function XaviWebsite() {
-  return (
-    <div className="min-h-screen bg-neutral-100 text-neutral-900 font-serif">
-      {/* Hero Section */}
-      <section className="flex flex-col items-center justify-center h-screen bg-neutral-200 p-6 text-center">
-        <h1 className="text-6xl font-bold tracking-wide mb-4">XAVI</h1>
-        <p className="text-xl">Timeless. Minimal. Premium Clothing.</p>
-        <button className="mt-8 px-8 py-3 bg-black text-white rounded-xl text-lg shadow-lg hover:opacity-80 transition">Shop Now</button>
-      </section>
+  <!-- Google Fonts (optioneel) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Nunito+Sans:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
 
-      {/* About */}
-      <section className="max-w-4xl mx-auto py-20 px-6 text-center">
-        <h2 className="text-4xl font-bold mb-6">About XAVI</h2>
-        <p className="text-lg leading-relaxed text-neutral-700">
-          XAVI staat voor minimalistische luxe. Onze collectie is ontworpen met
-          hoogwaardige materialen, neutrale tinten en tijdloze silhouetten –
-          kleding die niet seizoensgebonden is, maar jarenlang meegaat.
-        </p>
-      </section>
+  <style>
+    :root {
+      /* Kleuren: subtiel, warm en rustig */
+      --bg-main: #f5f1eb;         /* zachte lichte taupe */
+      --bg-light: #faf7f2;
+      --accent: #b59a7b;          /* warm zand/bruin */
+      --accent-dark: #8a6e4f;
+      --text-main: #2f2a26;
+      --text-muted: #7c7167;
+      --border-soft: #e3d9cf;
+      --white: #ffffff;
+    }
 
-      {/* Featured Collection */}
-      <section className="bg-white py-20 px-6">
-        <h2 className="text-4xl font-bold text-center mb-10">Featured Collection</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
-          {[1,2,3].map((item) => (
-            <div key={item} className="bg-neutral-100 rounded-2xl shadow p-4 flex flex-col items-center hover:shadow-lg transition">
-              <div className="w-full h-72 bg-neutral-300 rounded-xl mb-4"></div>
-              <h3 className="text-xl font-semibold mb-2">Product {item}</h3>
-              <p className="text-neutral-600 mb-3">€99,00</p>
-              <button className="px-6 py-2 bg-black text-white rounded-lg hover:opacity-80">Bekijk</button>
-            </div>
-          ))}
-        </div>
-      </section>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-      {/* Footer */}
-      <footer className="bg-black text-white py-10 text-center mt-20">
-        <h4 className="text-xl mb-2">XAVI</h4>
-        <p className="text-neutral-400">Minimal luxury clothing brand</p>
-        <p className="text-neutral-500 mt-4 text-sm">© 2025 XAVI. All rights reserved.</p>
-      </footer>
-    </div>
-  );
-}
+    body {
+      font-family: "Nunito Sans", system-ui, -apple-system, Bli
